@@ -1,16 +1,39 @@
+import 'package:app_calculadora_imc/exception/custom_exception.dart';
 import 'package:app_calculadora_imc/models/pessoa.dart';
 import 'package:app_calculadora_imc/utils/console_utils.dart';
 
 void lerDadosECalculaIMC() {
-  String nome = ConsoleUtils.lerStringComMsg("Digite nome da pessoa:");
-  double? peso = ConsoleUtils.lerDoubleComMsg("Digite o peso:");
-  double? altura = ConsoleUtils.lerDoubleComMsg("Digite a altura:");
 
-  Pessoa pessoa = Pessoa(nome, altura!, peso!);
+  try {
 
-  var imc = _calculaIMC(pessoa);
+    String nome = ConsoleUtils.lerStringComMsg("Digite nome da pessoa:");
+    validaDadoInformadoDisparaException(nome, "O nome é obrigatório.");
 
-  printResultadoImc(imc);
+    double? peso = ConsoleUtils.lerDoubleComMsg("Digite o peso:");
+    validaDadoInformadoDisparaException(peso, "O peso é obrigatório.");
+
+    double? altura = ConsoleUtils.lerDoubleComMsg("Digite a altura:");
+    validaDadoInformadoDisparaException(peso, "A altura é obrigatória.");
+
+    Pessoa pessoa = Pessoa(nome, altura!, peso!);
+
+    var imc = calculaIMC(pessoa);
+
+    printResultadoImc(imc);
+  }
+  on CustomException catch (e){
+    print(e.erro);
+  }
+  on Exception catch (e){
+    print(e.toString());
+  }
+
+}
+
+void validaDadoInformadoDisparaException(dynamic valor, String msg) {
+  if(valor == null || valor.isEmpty){
+    throw CustomException(msg);
+  }
 }
 
 void printResultadoImc(double imc) {
@@ -33,6 +56,6 @@ void printResultadoImc(double imc) {
   }
 }
 
-double _calculaIMC(Pessoa pessoa) {
+double calculaIMC(Pessoa pessoa) {
   return pessoa.peso / (pessoa.altura * pessoa.altura);
 }

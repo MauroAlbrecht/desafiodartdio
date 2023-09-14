@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a84e0950-85c6-406b-96b3-74a030142065" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/exception/custom_exception.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/app_calculadora_imc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/app_calculadora_imc.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/app_calculadora_imc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app_calculadora_imc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app_calculadora_imc_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/app_calculadora_imc_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694631938435</updated>
-      <workItem from="1694631940118" duration="2402000" />
+      <workItem from="1694631940118" duration="4829000" />
     </task>
     <task id="LOCAL-00001" summary="iniciando projeto">
       <created>1694631975229</created>
@@ -80,7 +81,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694632220932</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add leitura e cálculo de imc">
+      <created>1694720129059</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694720129059</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add leitura e cálculo de imc">
+      <created>1694720166353</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694720166353</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,33 +105,46 @@
     <MESSAGE value="iniciando projeto" />
     <MESSAGE value="add model de pessoa" />
     <MESSAGE value="add classe para leitura de entrada de dados" />
-    <option name="LAST_COMMIT_MESSAGE" value="add classe para leitura de entrada de dados" />
+    <MESSAGE value="add leitura e cálculo de imc" />
+    <option name="LAST_COMMIT_MESSAGE" value="add leitura e cálculo de imc" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-769" y="-560" key="#com.intellij.ide.util.MemberChooser" timestamp="1694632046685">
-      <screen x="-2560" y="-836" width="2560" height="1055" />
+    <state x="-769" y="-581" key="#com.intellij.ide.util.MemberChooser" timestamp="1694721338247">
+      <screen x="-2560" y="-836" width="2560" height="974" />
     </state>
     <state x="-769" y="-560" key="#com.intellij.ide.util.MemberChooser/-2560.-836.2560.1055/0.25.1680.953@-2560.-836.2560.1055" timestamp="1694632046685" />
-    <state x="-1000" y="-693" key="CommitChangelistDialog2" timestamp="1694720128911">
+    <state x="-769" y="-581" key="#com.intellij.ide.util.MemberChooser/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694721338247" />
+    <state x="-1000" y="-693" key="CommitChangelistDialog2" timestamp="1694720166229">
       <screen x="-2560" y="-836" width="2560" height="974" />
     </state>
     <state x="-1000" y="-681" key="CommitChangelistDialog2/-2560.-836.2560.1055/0.25.1680.953@-2560.-836.2560.1055" timestamp="1694632220821" />
-    <state x="-1000" y="-693" key="CommitChangelistDialog2/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694720128911" />
-    <state width="1073" height="253" key="GridCell.Tab.0.bottom" timestamp="1694719802233">
+    <state x="-1000" y="-693" key="CommitChangelistDialog2/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694720166229" />
+    <state width="1073" height="245" key="GridCell.Tab.0.bottom" timestamp="1694723120379">
       <screen x="-2560" y="-836" width="2560" height="974" />
     </state>
-    <state width="1073" height="253" key="GridCell.Tab.0.bottom/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694719802233" />
-    <state width="1073" height="253" key="GridCell.Tab.0.center" timestamp="1694719802232">
+    <state width="1073" height="245" key="GridCell.Tab.0.bottom/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723120379" />
+    <state width="1073" height="245" key="GridCell.Tab.0.center" timestamp="1694723120378">
       <screen x="-2560" y="-836" width="2560" height="974" />
     </state>
-    <state width="1073" height="253" key="GridCell.Tab.0.center/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694719802232" />
-    <state width="1073" height="253" key="GridCell.Tab.0.left" timestamp="1694719802231">
+    <state width="1073" height="245" key="GridCell.Tab.0.center/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723120378" />
+    <state width="1073" height="245" key="GridCell.Tab.0.left" timestamp="1694723120377">
       <screen x="-2560" y="-836" width="2560" height="974" />
     </state>
-    <state width="1073" height="253" key="GridCell.Tab.0.left/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694719802231" />
-    <state width="1073" height="253" key="GridCell.Tab.0.right" timestamp="1694719802232">
+    <state width="1073" height="245" key="GridCell.Tab.0.left/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723120377" />
+    <state width="1073" height="245" key="GridCell.Tab.0.right" timestamp="1694723120378">
       <screen x="-2560" y="-836" width="2560" height="974" />
     </state>
-    <state width="1073" height="253" key="GridCell.Tab.0.right/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694719802232" />
+    <state width="1073" height="245" key="GridCell.Tab.0.right/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723120378" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/app_calculadora_imc.dart</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
