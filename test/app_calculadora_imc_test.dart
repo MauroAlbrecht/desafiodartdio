@@ -3,9 +3,16 @@ import 'dart:ffi';
 import 'package:app_calculadora_imc/app_calculadora_imc.dart';
 import 'package:app_calculadora_imc/exception/custom_exception.dart';
 import 'package:app_calculadora_imc/models/pessoa.dart';
+import 'package:app_calculadora_imc/utils/console_utils.dart';
+import 'package:mockito/annotations.dart';
+import 'package:mockito/mockito.dart';
 import 'package:test/test.dart';
 
+import 'app_calculadora_imc_test.mocks.dart';
+
+@GenerateMocks([MockConsoleUtils])
 void main() {
+
   test('Valida dado informado passando null', () {
     expect(() => validaDadoInformadoDisparaException(null, "Erro"), throwsA(isA<CustomException>()));
   });
@@ -54,4 +61,32 @@ void main() {
     resultado = calculaIMC(Pessoa('Mauro', 1.70, 130));
     expect(resultado, equals(44.98));
   });
+
+  test('Valida leitura de string no terminal com msg', () async {
+    MockMockConsoleUtils mockConsoleUtils = MockMockConsoleUtils();
+    when(mockConsoleUtils.lerStringComMsg("Digite nome da pessoa:")).thenReturn("Mauro");
+    expect(mockConsoleUtils.lerStringComMsg("Digite nome da pessoa:"), equalsIgnoringCase("Mauro"));
+  });
+
+  test('Valida leitura de string no terminal sem msg', () async {
+    MockMockConsoleUtils mockConsoleUtils = MockMockConsoleUtils();
+    when(mockConsoleUtils.lerString()).thenReturn("Mauro");
+    expect(mockConsoleUtils.lerString(), equalsIgnoringCase("Mauro"));
+  });
+
+  test('Valida leitura de double no terminal com msg', () async {
+    MockMockConsoleUtils mockConsoleUtils = MockMockConsoleUtils();
+    when(mockConsoleUtils.lerDoubleComMsg("Digite peso da pessoa:")).thenReturn(1.70);
+    expect(mockConsoleUtils.lerDoubleComMsg("Digite peso da pessoa:"), equals(1.70));
+  });
+
+  test('Valida leitura de double no terminal sem msg', () async {
+    MockMockConsoleUtils mockConsoleUtils = MockMockConsoleUtils();
+    when(mockConsoleUtils.lerDouble()).thenReturn(1.70);
+    expect(mockConsoleUtils.lerDouble(), equals(1.70));
+  });
+}
+
+class MockConsoleUtils extends Mock implements ConsoleUtils {
+
 }

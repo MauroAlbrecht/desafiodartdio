@@ -4,6 +4,9 @@
     <list default="true" id="a84e0950-85c6-406b-96b3-74a030142065" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/app_calculadora_imc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app_calculadora_imc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/console_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/console_utils.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/app_calculadora_imc_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/app_calculadora_imc_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +30,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -63,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694631938435</updated>
-      <workItem from="1694631940118" duration="12105000" />
+      <workItem from="1694631940118" duration="13986000" />
     </task>
     <task id="LOCAL-00001" summary="iniciando projeto">
       <created>1694631975229</created>
@@ -114,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694723172716</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add testes unitários">
+      <created>1694731152775</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1694731152775</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +136,8 @@
     <MESSAGE value="add classe para leitura de entrada de dados" />
     <MESSAGE value="add leitura e cálculo de imc" />
     <MESSAGE value="add validação de dados digitados" />
-    <option name="LAST_COMMIT_MESSAGE" value="add validação de dados digitados" />
+    <MESSAGE value="add testes unitários" />
+    <option name="LAST_COMMIT_MESSAGE" value="add testes unitários" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-769" y="-581" key="#com.intellij.ide.util.MemberChooser" timestamp="1694721338247">
@@ -134,55 +145,48 @@
     </state>
     <state x="-769" y="-560" key="#com.intellij.ide.util.MemberChooser/-2560.-836.2560.1055/0.25.1680.953@-2560.-836.2560.1055" timestamp="1694632046685" />
     <state x="-769" y="-581" key="#com.intellij.ide.util.MemberChooser/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694721338247" />
-    <state x="-1000" y="-693" key="CommitChangelistDialog2" timestamp="1694723172561">
-      <screen x="-2560" y="-836" width="2560" height="974" />
+    <state x="-1000" y="-681" key="CommitChangelistDialog2" timestamp="1694731152632">
+      <screen x="-2560" y="-836" width="2560" height="1055" />
     </state>
     <state x="-1000" y="-681" key="CommitChangelistDialog2/-2560.-836.2560.1055/0.25.1680.953@-2560.-836.2560.1055" timestamp="1694632220821" />
+    <state x="-1000" y="-681" key="CommitChangelistDialog2/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694731152632" />
     <state x="-1000" y="-693" key="CommitChangelistDialog2/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723172561" />
-    <state width="1073" height="269" key="GridCell.Tab.0.bottom" timestamp="1694731140506">
-      <screen x="-2560" y="-836" width="2560" height="1055" />
+    <state width="1073" height="269" key="GridCell.Tab.0.bottom" timestamp="1694732918616">
+      <screen x="-2560" y="-836" width="2560" height="974" />
     </state>
-    <state width="1073" height="269" key="GridCell.Tab.0.bottom/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694731140506" />
+    <state width="1073" height="269" key="GridCell.Tab.0.bottom/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694732509523" />
     <state width="1073" height="245" key="GridCell.Tab.0.bottom/-2560.-836.2560.1055/0.25.1680.960@-2560.-836.2560.1055" timestamp="1694724674588" />
-    <state width="1073" height="245" key="GridCell.Tab.0.bottom/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723120379" />
-    <state width="1073" height="269" key="GridCell.Tab.0.center" timestamp="1694731140505">
-      <screen x="-2560" y="-836" width="2560" height="1055" />
+    <state width="1073" height="269" key="GridCell.Tab.0.bottom/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694732918616" />
+    <state width="1073" height="269" key="GridCell.Tab.0.center" timestamp="1694732918615">
+      <screen x="-2560" y="-836" width="2560" height="974" />
     </state>
-    <state width="1073" height="269" key="GridCell.Tab.0.center/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694731140505" />
+    <state width="1073" height="269" key="GridCell.Tab.0.center/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694732509522" />
     <state width="1073" height="245" key="GridCell.Tab.0.center/-2560.-836.2560.1055/0.25.1680.960@-2560.-836.2560.1055" timestamp="1694724674587" />
-    <state width="1073" height="245" key="GridCell.Tab.0.center/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723120378" />
-    <state width="1073" height="269" key="GridCell.Tab.0.left" timestamp="1694731140505">
-      <screen x="-2560" y="-836" width="2560" height="1055" />
+    <state width="1073" height="269" key="GridCell.Tab.0.center/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694732918615" />
+    <state width="1073" height="269" key="GridCell.Tab.0.left" timestamp="1694732918614">
+      <screen x="-2560" y="-836" width="2560" height="974" />
     </state>
-    <state width="1073" height="269" key="GridCell.Tab.0.left/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694731140505" />
+    <state width="1073" height="269" key="GridCell.Tab.0.left/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694732509522" />
     <state width="1073" height="245" key="GridCell.Tab.0.left/-2560.-836.2560.1055/0.25.1680.960@-2560.-836.2560.1055" timestamp="1694724674586" />
-    <state width="1073" height="245" key="GridCell.Tab.0.left/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723120377" />
-    <state width="1073" height="269" key="GridCell.Tab.0.right" timestamp="1694731140506">
+    <state width="1073" height="269" key="GridCell.Tab.0.left/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694732918614" />
+    <state width="1073" height="269" key="GridCell.Tab.0.right" timestamp="1694732918615">
+      <screen x="-2560" y="-836" width="2560" height="974" />
+    </state>
+    <state width="1073" height="269" key="GridCell.Tab.0.right/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694732509523" />
+    <state width="1073" height="245" key="GridCell.Tab.0.right/-2560.-836.2560.1055/0.25.1680.960@-2560.-836.2560.1055" timestamp="1694724674587" />
+    <state width="1073" height="269" key="GridCell.Tab.0.right/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694732918615" />
+    <state x="-1073" y="-713" key="SettingsEditor" timestamp="1694731576953">
       <screen x="-2560" y="-836" width="2560" height="1055" />
     </state>
-    <state width="1073" height="269" key="GridCell.Tab.0.right/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694731140506" />
-    <state width="1073" height="245" key="GridCell.Tab.0.right/-2560.-836.2560.1055/0.25.1680.960@-2560.-836.2560.1055" timestamp="1694724674587" />
-    <state width="1073" height="245" key="GridCell.Tab.0.right/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723120378" />
+    <state x="-1073" y="-713" key="SettingsEditor/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694731576953" />
     <state x="0" y="25" width="1680" height="964" maximized="true" key="dock-window-1" timestamp="1694724681912">
       <screen x="0" y="25" width="1680" height="960" />
     </state>
     <state x="0" y="25" width="1680" height="964" maximized="true" key="dock-window-1/-2560.-836.2560.1055/0.25.1680.960@-2560.-836.2560.1055" timestamp="1694724681912" />
     <state x="0" y="25" width="1669" height="1023" key="dock-window-1/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694724512445" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/app_calculadora_imc.dart</url>
-          <line>48</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/app_calculadora_imc.dart</url>
-          <line>42</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="-2533" y="-833" width="1345" height="953" key="dock-window-2" timestamp="1694732532399">
+      <screen x="-2560" y="-836" width="2560" height="1055" />
+    </state>
+    <state x="-2533" y="-833" width="1345" height="953" key="dock-window-2/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694732532399" />
   </component>
 </project>

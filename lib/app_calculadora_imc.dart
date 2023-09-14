@@ -3,9 +3,7 @@ import 'package:app_calculadora_imc/models/pessoa.dart';
 import 'package:app_calculadora_imc/utils/console_utils.dart';
 
 void lerDadosECalculaIMC() {
-
   try {
-
     String nome = executaLeituraNome();
 
     double? peso = executaLeituraPeso();
@@ -17,38 +15,33 @@ void lerDadosECalculaIMC() {
     var imc = calculaIMC(pessoa);
 
     printResultadoImc(imc);
-  }
-  on CustomException catch (e){
+  } on CustomException catch (e) {
     print(e.erro);
-  }
-  on Exception catch (e){
+  } on Exception catch (e) {
     print(e.toString());
   }
-
 }
 
 double? exeutaLeituraAltura() {
-  double? altura = ConsoleUtils.lerDoubleComMsg("Digite a altura:");
+  double? altura = ConsoleUtils().lerDoubleComMsg("Digite a altura:");
   validaDadoInformadoDisparaException(altura, "A altura é obrigatória.");
   return altura;
 }
 
 double? executaLeituraPeso() {
-  double? peso = ConsoleUtils.lerDoubleComMsg("Digite o peso:");
+  double? peso = ConsoleUtils().lerDoubleComMsg("Digite o peso:");
   validaDadoInformadoDisparaException(peso, "O peso é obrigatório.");
   return peso;
 }
 
 String executaLeituraNome() {
-  String nome = ConsoleUtils.lerStringComMsg("Digite nome da pessoa:");
+  String nome = ConsoleUtils().lerStringComMsg("Digite nome da pessoa:");
   validaDadoInformadoDisparaException(nome, "O nome é obrigatório.");
   return nome;
 }
 
 void validaDadoInformadoDisparaException(dynamic valor, String msg) {
-  if(valor == null
-      || (valor is String && valor.isEmpty)
-      || (valor is double && valor == 0)) {
+  if (valor == null || (valor is String && valor.isEmpty) || (valor is double && valor == 0)) {
     throw CustomException(msg);
   }
 }
