@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a84e0950-85c6-406b-96b3-74a030142065" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/app_calculadora_imc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bin/app_calculadora_imc.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app_calculadora_imc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app_calculadora_imc.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2VM35TfiH1pqIqqa4hw17PJjfS3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -13,8 +25,98 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app_calculadora_imc.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/bin/app_calculadora_imc.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Dart Command Line App.app_calculadora_imc.dart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a84e0950-85c6-406b-96b3-74a030142065" name="Default Changelist" comment="" />
+      <created>1694631938435</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694631938435</updated>
+      <workItem from="1694631940118" duration="2402000" />
+    </task>
+    <task id="LOCAL-00001" summary="iniciando projeto">
+      <created>1694631975229</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694631975229</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add model de pessoa">
+      <created>1694632156554</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694632156554</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add classe para leitura de entrada de dados">
+      <created>1694632220932</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694632220932</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="iniciando projeto" />
+    <MESSAGE value="add model de pessoa" />
+    <MESSAGE value="add classe para leitura de entrada de dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="add classe para leitura de entrada de dados" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-769" y="-560" key="#com.intellij.ide.util.MemberChooser" timestamp="1694632046685">
+      <screen x="-2560" y="-836" width="2560" height="1055" />
+    </state>
+    <state x="-769" y="-560" key="#com.intellij.ide.util.MemberChooser/-2560.-836.2560.1055/0.25.1680.953@-2560.-836.2560.1055" timestamp="1694632046685" />
+    <state x="-1000" y="-693" key="CommitChangelistDialog2" timestamp="1694720128911">
+      <screen x="-2560" y="-836" width="2560" height="974" />
+    </state>
+    <state x="-1000" y="-681" key="CommitChangelistDialog2/-2560.-836.2560.1055/0.25.1680.953@-2560.-836.2560.1055" timestamp="1694632220821" />
+    <state x="-1000" y="-693" key="CommitChangelistDialog2/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694720128911" />
+    <state width="1073" height="253" key="GridCell.Tab.0.bottom" timestamp="1694719802233">
+      <screen x="-2560" y="-836" width="2560" height="974" />
+    </state>
+    <state width="1073" height="253" key="GridCell.Tab.0.bottom/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694719802233" />
+    <state width="1073" height="253" key="GridCell.Tab.0.center" timestamp="1694719802232">
+      <screen x="-2560" y="-836" width="2560" height="974" />
+    </state>
+    <state width="1073" height="253" key="GridCell.Tab.0.center/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694719802232" />
+    <state width="1073" height="253" key="GridCell.Tab.0.left" timestamp="1694719802231">
+      <screen x="-2560" y="-836" width="2560" height="974" />
+    </state>
+    <state width="1073" height="253" key="GridCell.Tab.0.left/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694719802231" />
+    <state width="1073" height="253" key="GridCell.Tab.0.right" timestamp="1694719802232">
+      <screen x="-2560" y="-836" width="2560" height="974" />
+    </state>
+    <state width="1073" height="253" key="GridCell.Tab.0.right/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694719802232" />
   </component>
 </project>
