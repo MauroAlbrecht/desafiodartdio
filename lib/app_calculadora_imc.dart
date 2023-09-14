@@ -6,14 +6,11 @@ void lerDadosECalculaIMC() {
 
   try {
 
-    String nome = ConsoleUtils.lerStringComMsg("Digite nome da pessoa:");
-    validaDadoInformadoDisparaException(nome, "O nome é obrigatório.");
+    String nome = executaLeituraNome();
 
-    double? peso = ConsoleUtils.lerDoubleComMsg("Digite o peso:");
-    validaDadoInformadoDisparaException(peso, "O peso é obrigatório.");
+    double? peso = executaLeituraPeso();
 
-    double? altura = ConsoleUtils.lerDoubleComMsg("Digite a altura:");
-    validaDadoInformadoDisparaException(peso, "A altura é obrigatória.");
+    double? altura = exeutaLeituraAltura();
 
     Pessoa pessoa = Pessoa(nome, altura!, peso!);
 
@@ -30,8 +27,28 @@ void lerDadosECalculaIMC() {
 
 }
 
+double? exeutaLeituraAltura() {
+  double? altura = ConsoleUtils.lerDoubleComMsg("Digite a altura:");
+  validaDadoInformadoDisparaException(altura, "A altura é obrigatória.");
+  return altura;
+}
+
+double? executaLeituraPeso() {
+  double? peso = ConsoleUtils.lerDoubleComMsg("Digite o peso:");
+  validaDadoInformadoDisparaException(peso, "O peso é obrigatório.");
+  return peso;
+}
+
+String executaLeituraNome() {
+  String nome = ConsoleUtils.lerStringComMsg("Digite nome da pessoa:");
+  validaDadoInformadoDisparaException(nome, "O nome é obrigatório.");
+  return nome;
+}
+
 void validaDadoInformadoDisparaException(dynamic valor, String msg) {
-  if(valor == null || valor.isEmpty){
+  if(valor == null
+      || (valor is String && valor.isEmpty)
+      || (valor is double && valor == 0)) {
     throw CustomException(msg);
   }
 }
@@ -57,5 +74,5 @@ void printResultadoImc(double imc) {
 }
 
 double calculaIMC(Pessoa pessoa) {
-  return pessoa.peso / (pessoa.altura * pessoa.altura);
+  return double.parse((pessoa.peso / (pessoa.altura * pessoa.altura)).toStringAsFixed(2));
 }

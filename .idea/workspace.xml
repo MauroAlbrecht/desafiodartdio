@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a84e0950-85c6-406b-96b3-74a030142065" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/exception/custom_exception.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/app_calculadora_imc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app_calculadora_imc.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/app_calculadora_imc_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/app_calculadora_imc_test.dart" afterDir="false" />
@@ -36,14 +35,20 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Dart Command Line App.app_calculadora_imc_test.dart">
     <configuration name="app_calculadora_imc.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/bin/app_calculadora_imc.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="app_calculadora_imc_test.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/test/app_calculadora_imc_test.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Dart Command Line App.app_calculadora_imc_test.dart" />
         <item itemvalue="Dart Command Line App.app_calculadora_imc.dart" />
       </list>
     </recent_temporary>
@@ -58,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694631938435</updated>
-      <workItem from="1694631940118" duration="4829000" />
+      <workItem from="1694631940118" duration="12105000" />
     </task>
     <task id="LOCAL-00001" summary="iniciando projeto">
       <created>1694631975229</created>
@@ -95,7 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1694720166353</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add validação de dados digitados">
+      <created>1694723165235</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694723165235</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add validação de dados digitados">
+      <created>1694723172716</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694723172716</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,7 +125,8 @@
     <MESSAGE value="add model de pessoa" />
     <MESSAGE value="add classe para leitura de entrada de dados" />
     <MESSAGE value="add leitura e cálculo de imc" />
-    <option name="LAST_COMMIT_MESSAGE" value="add leitura e cálculo de imc" />
+    <MESSAGE value="add validação de dados digitados" />
+    <option name="LAST_COMMIT_MESSAGE" value="add validação de dados digitados" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-769" y="-581" key="#com.intellij.ide.util.MemberChooser" timestamp="1694721338247">
@@ -114,35 +134,53 @@
     </state>
     <state x="-769" y="-560" key="#com.intellij.ide.util.MemberChooser/-2560.-836.2560.1055/0.25.1680.953@-2560.-836.2560.1055" timestamp="1694632046685" />
     <state x="-769" y="-581" key="#com.intellij.ide.util.MemberChooser/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694721338247" />
-    <state x="-1000" y="-693" key="CommitChangelistDialog2" timestamp="1694723165068">
+    <state x="-1000" y="-693" key="CommitChangelistDialog2" timestamp="1694723172561">
       <screen x="-2560" y="-836" width="2560" height="974" />
     </state>
     <state x="-1000" y="-681" key="CommitChangelistDialog2/-2560.-836.2560.1055/0.25.1680.953@-2560.-836.2560.1055" timestamp="1694632220821" />
-    <state x="-1000" y="-693" key="CommitChangelistDialog2/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723165068" />
-    <state width="1073" height="245" key="GridCell.Tab.0.bottom" timestamp="1694723120379">
-      <screen x="-2560" y="-836" width="2560" height="974" />
+    <state x="-1000" y="-693" key="CommitChangelistDialog2/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723172561" />
+    <state width="1073" height="269" key="GridCell.Tab.0.bottom" timestamp="1694731140506">
+      <screen x="-2560" y="-836" width="2560" height="1055" />
     </state>
+    <state width="1073" height="269" key="GridCell.Tab.0.bottom/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694731140506" />
+    <state width="1073" height="245" key="GridCell.Tab.0.bottom/-2560.-836.2560.1055/0.25.1680.960@-2560.-836.2560.1055" timestamp="1694724674588" />
     <state width="1073" height="245" key="GridCell.Tab.0.bottom/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723120379" />
-    <state width="1073" height="245" key="GridCell.Tab.0.center" timestamp="1694723120378">
-      <screen x="-2560" y="-836" width="2560" height="974" />
+    <state width="1073" height="269" key="GridCell.Tab.0.center" timestamp="1694731140505">
+      <screen x="-2560" y="-836" width="2560" height="1055" />
     </state>
+    <state width="1073" height="269" key="GridCell.Tab.0.center/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694731140505" />
+    <state width="1073" height="245" key="GridCell.Tab.0.center/-2560.-836.2560.1055/0.25.1680.960@-2560.-836.2560.1055" timestamp="1694724674587" />
     <state width="1073" height="245" key="GridCell.Tab.0.center/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723120378" />
-    <state width="1073" height="245" key="GridCell.Tab.0.left" timestamp="1694723120377">
-      <screen x="-2560" y="-836" width="2560" height="974" />
+    <state width="1073" height="269" key="GridCell.Tab.0.left" timestamp="1694731140505">
+      <screen x="-2560" y="-836" width="2560" height="1055" />
     </state>
+    <state width="1073" height="269" key="GridCell.Tab.0.left/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694731140505" />
+    <state width="1073" height="245" key="GridCell.Tab.0.left/-2560.-836.2560.1055/0.25.1680.960@-2560.-836.2560.1055" timestamp="1694724674586" />
     <state width="1073" height="245" key="GridCell.Tab.0.left/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723120377" />
-    <state width="1073" height="245" key="GridCell.Tab.0.right" timestamp="1694723120378">
-      <screen x="-2560" y="-836" width="2560" height="974" />
+    <state width="1073" height="269" key="GridCell.Tab.0.right" timestamp="1694731140506">
+      <screen x="-2560" y="-836" width="2560" height="1055" />
     </state>
+    <state width="1073" height="269" key="GridCell.Tab.0.right/-2560.-836.2560.1055/0.25.1680.959@-2560.-836.2560.1055" timestamp="1694731140506" />
+    <state width="1073" height="245" key="GridCell.Tab.0.right/-2560.-836.2560.1055/0.25.1680.960@-2560.-836.2560.1055" timestamp="1694724674587" />
     <state width="1073" height="245" key="GridCell.Tab.0.right/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694723120378" />
+    <state x="0" y="25" width="1680" height="964" maximized="true" key="dock-window-1" timestamp="1694724681912">
+      <screen x="0" y="25" width="1680" height="960" />
+    </state>
+    <state x="0" y="25" width="1680" height="964" maximized="true" key="dock-window-1/-2560.-836.2560.1055/0.25.1680.960@-2560.-836.2560.1055" timestamp="1694724681912" />
+    <state x="0" y="25" width="1669" height="1023" key="dock-window-1/-2560.-836.2560.974/0.25.1680.1025@-2560.-836.2560.974" timestamp="1694724512445" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/app_calculadora_imc.dart</url>
-          <line>33</line>
+          <line>48</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/app_calculadora_imc.dart</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
